@@ -1,0 +1,7 @@
+{
+  "train_seconds": 2106.9541869163513,
+  "success_rate": 0.0,
+  "violation_rate": 1.0,
+  "avg_team_return": 83.24499999999989,
+  "avg_ep_length": null
+}

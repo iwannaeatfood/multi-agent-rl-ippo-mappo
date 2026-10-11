@@ -1,0 +1,30 @@
+{
+  "ippo_fixed": {
+    "train_seconds": 1448.8855357170105,
+    "success_rate": 0.0025,
+    "violation_rate": 0.9975,
+    "avg_team_return": 153.20399999999995,
+    "avg_ep_length": 39.0
+  },
+  "ippo_random": {
+    "train_seconds": 1496.420177936554,
+    "success_rate": 0.1225,
+    "violation_rate": 0.0,
+    "avg_team_return": 220.72100000000006,
+    "avg_ep_length": 45.95918367346939
+  },
+  "mappo_fixed": {
+    "train_seconds": 1758.6862149238586,
+    "success_rate": 0.0,
+    "violation_rate": 1.0,
+    "avg_team_return": 152.83499999999995,
+    "avg_ep_length": null
+  },
+  "mappo_random": {
+    "train_seconds": 2106.9541869163513,
+    "success_rate": 0.0,
+    "violation_rate": 1.0,
+    "avg_team_return": 83.24499999999989,
+    "avg_ep_length": null
+  }
+}

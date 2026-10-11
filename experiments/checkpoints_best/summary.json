@@ -1,0 +1,59 @@
+{
+  "selection_rule": "lower violation_rate first, then higher success_rate, then higher avg_team_return",
+  "ippo_fixed": {
+    "source": "optimized_700iter (experiments/checkpoints_v2)",
+    "train_seconds": 1448.8855357170105,
+    "success_rate": 0.0025,
+    "violation_rate": 0.9975,
+    "avg_team_return": 153.20399999999995,
+    "avg_ep_length": 39.0,
+    "rejected_alternative": {
+      "source": "submitted_400iter (checkpoints/)",
+      "success_rate": 0.0,
+      "violation_rate": 1.0,
+      "avg_team_return": 145.49
+    }
+  },
+  "ippo_random": {
+    "source": "optimized_700iter (experiments/checkpoints_v2)",
+    "train_seconds": 1496.420177936554,
+    "success_rate": 0.1225,
+    "violation_rate": 0.0,
+    "avg_team_return": 220.72100000000006,
+    "avg_ep_length": 45.95918367346939,
+    "rejected_alternative": {
+      "source": "submitted_400iter (checkpoints/)",
+      "success_rate": 0.01,
+      "violation_rate": 0.99,
+      "avg_team_return": 161.44
+    }
+  },
+  "mappo_fixed": {
+    "source": "submitted_400iter (checkpoints/)",
+    "success_rate": 0.005,
+    "violation_rate": 0.0,
+    "avg_team_return": 131.81,
+    "avg_ep_length": null,
+    "rejected_alternative": {
+      "source": "optimized_700iter (experiments/checkpoints_v2)",
+      "success_rate": 0.0,
+      "violation_rate": 1.0,
+      "avg_team_return": 152.83499999999995,
+      "note": "higher return but critic destabilized (critic_loss oscillating 40-217 throughout training, never converging) after raising critic lr 3e-4 -> 1e-3; policy collapsed to unsafe behaviour"
+    }
+  },
+  "mappo_random": {
+    "source": "submitted_400iter (checkpoints/)",
+    "success_rate": 0.012,
+    "violation_rate": 0.0,
+    "avg_team_return": 170.33,
+    "avg_ep_length": null,
+    "rejected_alternative": {
+      "source": "optimized_700iter (experiments/checkpoints_v2)",
+      "success_rate": 0.0,
+      "violation_rate": 1.0,
+      "avg_team_return": 83.24499999999989,
+      "note": "same critic-lr instability as mappo_fixed"
+    }
+  }
+}

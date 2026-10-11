@@ -1,0 +1,52 @@
+
+--- launching subprocess for ippo_fixed ---
+
+=== training ippo_fixed for 700 iterations ===
+[IPPO] iter 1/700 episodes_in_rollout=144 avg_total_loss=59.174
+[IPPO] iter 36/700 episodes_in_rollout=20 avg_total_loss=23.478
+[IPPO] iter 71/700 episodes_in_rollout=14 avg_total_loss=21.490
+[IPPO] iter 106/700 episodes_in_rollout=11 avg_total_loss=20.339
+[IPPO] iter 141/700 episodes_in_rollout=9 avg_total_loss=19.703
+[IPPO] iter 176/700 episodes_in_rollout=7 avg_total_loss=8.720
+[IPPO] iter 211/700 episodes_in_rollout=7 avg_total_loss=9.120
+[IPPO] iter 246/700 episodes_in_rollout=6 avg_total_loss=3.345
+[IPPO] iter 281/700 episodes_in_rollout=6 avg_total_loss=6.618
+[IPPO] iter 316/700 episodes_in_rollout=9 avg_total_loss=26.901
+[IPPO] iter 351/700 episodes_in_rollout=6 avg_total_loss=12.022
+[IPPO] iter 386/700 episodes_in_rollout=6 avg_total_loss=9.664
+[IPPO] iter 421/700 episodes_in_rollout=8 avg_total_loss=13.469
+[IPPO] iter 456/700 episodes_in_rollout=9 avg_total_loss=8.578
+[IPPO] iter 491/700 episodes_in_rollout=9 avg_total_loss=26.870
+[IPPO] iter 526/700 episodes_in_rollout=9 avg_total_loss=30.884
+[IPPO] iter 561/700 episodes_in_rollout=10 avg_total_loss=55.801
+[IPPO] iter 596/700 episodes_in_rollout=9 avg_total_loss=25.994
+[IPPO] iter 631/700 episodes_in_rollout=9 avg_total_loss=16.733
+[IPPO] iter 666/700 episodes_in_rollout=9 avg_total_loss=26.803
+[IPPO] iter 700/700 episodes_in_rollout=9 avg_total_loss=24.351
+ippo_fixed training took 1348s
+ippo_fixed eval: {'train_seconds': 1348.1270203590393, 'success_rate': 0.0025, 'violation_rate': 1.0, 'avg_team_return': 152.81999999999996, 'avg_ep_length': 35.0}
+
+--- launching subprocess for mappo_fixed ---
+
+=== training mappo_fixed for 700 iterations ===
+[MAPPO] iter 1/700 episodes_in_rollout=128 avg_total_loss=51.638
+[MAPPO] iter 36/700 episodes_in_rollout=17 avg_total_loss=23.052
+[MAPPO] iter 71/700 episodes_in_rollout=11 avg_total_loss=20.725
+[MAPPO] iter 106/700 episodes_in_rollout=10 avg_total_loss=19.297
+[MAPPO] iter 141/700 episodes_in_rollout=9 avg_total_loss=14.212
+Traceback (most recent call last):
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 714, in <module>
+    run_one_config(args.config, args.n_iter)
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 656, in run_one_config
+    trainer.train(n_iterations=n_iter, verbose=True, log_every=max(1, n_iter // 20))
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 515, in train
+    arrs = buf.get_arrays()
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 275, in get_arrays
+    "value_inputs": np.asarray(self.value_inputs, dtype=np.float32),
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 2.47 MiB for an array with shape (300, 2160) and data type float32
+Traceback (most recent call last):
+  File "H:\CLASS\9414\9414t2\ass2\experiments\resume_remaining.py", line 15, in <module>
+    subprocess.run([sys.executable, "train_optimized.py", "--config", name, "--n_iter", str(N_ITER)], check=True)
+  File "D:\python\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\python\\python.exe', 'train_optimized.py', '--config', 'mappo_fixed', '--n_iter', '700']' returned non-zero exit status 1.

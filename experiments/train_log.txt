@@ -1,0 +1,77 @@
+
+=== training ippo_fixed for 700 iterations ===
+[IPPO] iter 1/700 episodes_in_rollout=144 avg_total_loss=59.179
+[IPPO] iter 36/700 episodes_in_rollout=20 avg_total_loss=28.780
+[IPPO] iter 71/700 episodes_in_rollout=14 avg_total_loss=18.957
+[IPPO] iter 106/700 episodes_in_rollout=12 avg_total_loss=21.463
+[IPPO] iter 141/700 episodes_in_rollout=9 avg_total_loss=11.964
+[IPPO] iter 176/700 episodes_in_rollout=8 avg_total_loss=16.545
+[IPPO] iter 211/700 episodes_in_rollout=9 avg_total_loss=32.607
+[IPPO] iter 246/700 episodes_in_rollout=8 avg_total_loss=20.556
+[IPPO] iter 281/700 episodes_in_rollout=9 avg_total_loss=31.859
+[IPPO] iter 316/700 episodes_in_rollout=8 avg_total_loss=16.741
+[IPPO] iter 351/700 episodes_in_rollout=9 avg_total_loss=36.547
+[IPPO] iter 386/700 episodes_in_rollout=10 avg_total_loss=1.169
+[IPPO] iter 421/700 episodes_in_rollout=9 avg_total_loss=14.825
+[IPPO] iter 456/700 episodes_in_rollout=10 avg_total_loss=1.288
+[IPPO] iter 491/700 episodes_in_rollout=11 avg_total_loss=13.572
+[IPPO] iter 526/700 episodes_in_rollout=10 avg_total_loss=0.763
+[IPPO] iter 561/700 episodes_in_rollout=19 avg_total_loss=79.133
+[IPPO] iter 596/700 episodes_in_rollout=10 avg_total_loss=2.811
+[IPPO] iter 631/700 episodes_in_rollout=10 avg_total_loss=5.722
+[IPPO] iter 666/700 episodes_in_rollout=10 avg_total_loss=0.872
+[IPPO] iter 700/700 episodes_in_rollout=10 avg_total_loss=1.536
+ippo_fixed training took 1611s
+ippo_fixed eval: {'train_seconds': 1611.2110874652863, 'success_rate': 0.0, 'violation_rate': 1.0, 'avg_team_return': 124.31499999999997, 'avg_ep_length': None}
+
+=== training ippo_random for 700 iterations ===
+[IPPO] iter 1/700 episodes_in_rollout=144 avg_total_loss=59.070
+[IPPO] iter 36/700 episodes_in_rollout=22 avg_total_loss=25.367
+[IPPO] iter 71/700 episodes_in_rollout=16 avg_total_loss=21.378
+[IPPO] iter 106/700 episodes_in_rollout=13 avg_total_loss=17.423
+[IPPO] iter 141/700 episodes_in_rollout=10 avg_total_loss=16.621
+[IPPO] iter 176/700 episodes_in_rollout=9 avg_total_loss=19.186
+[IPPO] iter 211/700 episodes_in_rollout=9 avg_total_loss=26.798
+[IPPO] iter 246/700 episodes_in_rollout=7 avg_total_loss=14.336
+[IPPO] iter 281/700 episodes_in_rollout=7 avg_total_loss=13.397
+[IPPO] iter 316/700 episodes_in_rollout=7 avg_total_loss=11.676
+[IPPO] iter 351/700 episodes_in_rollout=7 avg_total_loss=12.585
+[IPPO] iter 386/700 episodes_in_rollout=6 avg_total_loss=11.756
+[IPPO] iter 421/700 episodes_in_rollout=8 avg_total_loss=14.526
+[IPPO] iter 456/700 episodes_in_rollout=6 avg_total_loss=18.706
+[IPPO] iter 491/700 episodes_in_rollout=6 avg_total_loss=10.739
+[IPPO] iter 526/700 episodes_in_rollout=11 avg_total_loss=36.518
+[IPPO] iter 561/700 episodes_in_rollout=6 avg_total_loss=10.469
+[IPPO] iter 596/700 episodes_in_rollout=7 avg_total_loss=22.429
+[IPPO] iter 631/700 episodes_in_rollout=7 avg_total_loss=18.606
+[IPPO] iter 666/700 episodes_in_rollout=7 avg_total_loss=24.754
+[IPPO] iter 700/700 episodes_in_rollout=6 avg_total_loss=14.866
+ippo_random training took 1496s
+ippo_random eval: {'train_seconds': 1496.420177936554, 'success_rate': 0.1225, 'violation_rate': 0.0, 'avg_team_return': 220.72100000000006, 'avg_ep_length': 45.95918367346939}
+
+=== training mappo_fixed for 700 iterations ===
+[MAPPO] iter 1/700 episodes_in_rollout=128 avg_total_loss=51.721
+[MAPPO] iter 36/700 episodes_in_rollout=16 avg_total_loss=23.334
+[MAPPO] iter 71/700 episodes_in_rollout=11 avg_total_loss=20.062
+[MAPPO] iter 106/700 episodes_in_rollout=12 avg_total_loss=28.955
+[MAPPO] iter 141/700 episodes_in_rollout=9 avg_total_loss=28.382
+[MAPPO] iter 176/700 episodes_in_rollout=9 avg_total_loss=38.047
+[MAPPO] iter 211/700 episodes_in_rollout=7 avg_total_loss=21.795
+[MAPPO] iter 246/700 episodes_in_rollout=9 avg_total_loss=37.607
+[MAPPO] iter 281/700 episodes_in_rollout=9 avg_total_loss=37.061
+[MAPPO] iter 316/700 episodes_in_rollout=9 avg_total_loss=33.961
+[MAPPO] iter 351/700 episodes_in_rollout=13 avg_total_loss=40.464
+[MAPPO] iter 386/700 episodes_in_rollout=11 avg_total_loss=29.698
+[MAPPO] iter 421/700 episodes_in_rollout=12 avg_total_loss=45.820
+[MAPPO] iter 456/700 episodes_in_rollout=13 avg_total_loss=48.645
+[MAPPO] iter 491/700 episodes_in_rollout=12 avg_total_loss=38.153
+[MAPPO] iter 526/700 episodes_in_rollout=12 avg_total_loss=47.220
+[MAPPO] iter 561/700 episodes_in_rollout=10 avg_total_loss=29.561
+Traceback (most recent call last):
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 649, in <module>
+    trainer.train(n_iterations=N_ITER, verbose=True, log_every=max(1, N_ITER // 20))
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 512, in train
+    arrs = buf.get_arrays()
+  File "H:\CLASS\9414\9414t2\ass2\experiments\train_optimized.py", line 274, in get_arrays
+    "value_inputs": np.asarray(self.value_inputs, dtype=np.float32),
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 2.47 MiB for an array with shape (300, 2160) and data type float32

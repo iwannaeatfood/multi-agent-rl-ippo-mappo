@@ -1,0 +1,113 @@
+
+--- launching subprocess for ippo_fixed ---
+
+=== training ippo_fixed for 700 iterations ===
+[IPPO] iter 1/700 episodes_in_rollout=144 avg_total_loss=59.225
+[IPPO] iter 36/700 episodes_in_rollout=20 avg_total_loss=21.307
+[IPPO] iter 71/700 episodes_in_rollout=13 avg_total_loss=18.059
+[IPPO] iter 106/700 episodes_in_rollout=10 avg_total_loss=20.942
+[IPPO] iter 141/700 episodes_in_rollout=12 avg_total_loss=52.774
+[IPPO] iter 176/700 episodes_in_rollout=9 avg_total_loss=14.198
+[IPPO] iter 211/700 episodes_in_rollout=9 avg_total_loss=17.315
+[IPPO] iter 246/700 episodes_in_rollout=9 avg_total_loss=18.335
+[IPPO] iter 281/700 episodes_in_rollout=9 avg_total_loss=11.042
+[IPPO] iter 316/700 episodes_in_rollout=10 avg_total_loss=58.920
+[IPPO] iter 351/700 episodes_in_rollout=9 avg_total_loss=10.380
+[IPPO] iter 386/700 episodes_in_rollout=9 avg_total_loss=19.645
+[IPPO] iter 421/700 episodes_in_rollout=9 avg_total_loss=18.057
+[IPPO] iter 456/700 episodes_in_rollout=10 avg_total_loss=23.688
+[IPPO] iter 491/700 episodes_in_rollout=9 avg_total_loss=9.677
+[IPPO] iter 526/700 episodes_in_rollout=9 avg_total_loss=15.588
+[IPPO] iter 561/700 episodes_in_rollout=9 avg_total_loss=9.888
+[IPPO] iter 596/700 episodes_in_rollout=10 avg_total_loss=25.473
+[IPPO] iter 631/700 episodes_in_rollout=11 avg_total_loss=51.785
+[IPPO] iter 666/700 episodes_in_rollout=10 avg_total_loss=24.537
+[IPPO] iter 700/700 episodes_in_rollout=8 avg_total_loss=13.684
+ippo_fixed training took 1449s
+ippo_fixed eval: {'train_seconds': 1448.8855357170105, 'success_rate': 0.0025, 'violation_rate': 0.9975, 'avg_team_return': 153.20399999999995, 'avg_ep_length': 39.0}
+
+--- launching subprocess for mappo_fixed ---
+
+=== training mappo_fixed for 700 iterations ===
+[MAPPO] iter 1/700 episodes_in_rollout=128 avg_total_loss=51.640
+[MAPPO] iter 36/700 episodes_in_rollout=18 avg_total_loss=33.139
+[MAPPO] iter 71/700 episodes_in_rollout=10 avg_total_loss=17.681
+[MAPPO] iter 106/700 episodes_in_rollout=12 avg_total_loss=26.839
+[MAPPO] iter 141/700 episodes_in_rollout=8 avg_total_loss=17.202
+[MAPPO] iter 176/700 episodes_in_rollout=8 avg_total_loss=18.579
+[MAPPO] iter 211/700 episodes_in_rollout=10 avg_total_loss=39.461
+[MAPPO] iter 246/700 episodes_in_rollout=11 avg_total_loss=42.445
+[MAPPO] iter 281/700 episodes_in_rollout=11 avg_total_loss=47.227
+[MAPPO] iter 316/700 episodes_in_rollout=9 avg_total_loss=41.104
+[MAPPO] iter 351/700 episodes_in_rollout=10 avg_total_loss=32.272
+[MAPPO] iter 386/700 episodes_in_rollout=9 avg_total_loss=38.715
+[MAPPO] iter 421/700 episodes_in_rollout=9 avg_total_loss=36.842
+[MAPPO] iter 456/700 episodes_in_rollout=9 avg_total_loss=39.607
+[MAPPO] iter 491/700 episodes_in_rollout=10 avg_total_loss=40.553
+[MAPPO] iter 526/700 episodes_in_rollout=10 avg_total_loss=35.060
+[MAPPO] iter 561/700 episodes_in_rollout=12 avg_total_loss=37.547
+[MAPPO] iter 596/700 episodes_in_rollout=11 avg_total_loss=33.688
+[MAPPO] iter 631/700 episodes_in_rollout=11 avg_total_loss=29.001
+[MAPPO] iter 666/700 episodes_in_rollout=12 avg_total_loss=48.281
+[MAPPO] iter 700/700 episodes_in_rollout=15 avg_total_loss=74.554
+mappo_fixed training took 1759s
+mappo_fixed eval: {'train_seconds': 1758.6862149238586, 'success_rate': 0.0, 'violation_rate': 1.0, 'avg_team_return': 152.83499999999995, 'avg_ep_length': None}
+
+--- launching subprocess for mappo_random ---
+
+=== training mappo_random for 700 iterations ===
+[MAPPO] iter 1/700 episodes_in_rollout=128 avg_total_loss=50.863
+[MAPPO] iter 36/700 episodes_in_rollout=17 avg_total_loss=24.954
+[MAPPO] iter 71/700 episodes_in_rollout=12 avg_total_loss=25.626
+[MAPPO] iter 106/700 episodes_in_rollout=13 avg_total_loss=28.190
+[MAPPO] iter 141/700 episodes_in_rollout=7 avg_total_loss=12.979
+[MAPPO] iter 176/700 episodes_in_rollout=10 avg_total_loss=27.133
+[MAPPO] iter 211/700 episodes_in_rollout=7 avg_total_loss=19.871
+[MAPPO] iter 246/700 episodes_in_rollout=6 avg_total_loss=13.525
+[MAPPO] iter 281/700 episodes_in_rollout=9 avg_total_loss=23.582
+[MAPPO] iter 316/700 episodes_in_rollout=7 avg_total_loss=21.452
+[MAPPO] iter 351/700 episodes_in_rollout=7 avg_total_loss=21.672
+[MAPPO] iter 386/700 episodes_in_rollout=10 avg_total_loss=35.954
+[MAPPO] iter 421/700 episodes_in_rollout=7 avg_total_loss=17.942
+[MAPPO] iter 456/700 episodes_in_rollout=7 avg_total_loss=18.917
+[MAPPO] iter 491/700 episodes_in_rollout=6 avg_total_loss=14.196
+[MAPPO] iter 526/700 episodes_in_rollout=9 avg_total_loss=30.798
+[MAPPO] iter 561/700 episodes_in_rollout=6 avg_total_loss=16.079
+[MAPPO] iter 596/700 episodes_in_rollout=9 avg_total_loss=31.629
+[MAPPO] iter 631/700 episodes_in_rollout=10 avg_total_loss=34.968
+[MAPPO] iter 666/700 episodes_in_rollout=7 avg_total_loss=18.122
+[MAPPO] iter 700/700 episodes_in_rollout=8 avg_total_loss=30.987
+mappo_random training took 2107s
+mappo_random eval: {'train_seconds': 2106.9541869163513, 'success_rate': 0.0, 'violation_rate': 1.0, 'avg_team_return': 83.24499999999989, 'avg_ep_length': None}
+
+=== summary ===
+{
+  "ippo_fixed": {
+    "train_seconds": 1448.8855357170105,
+    "success_rate": 0.0025,
+    "violation_rate": 0.9975,
+    "avg_team_return": 153.20399999999995,
+    "avg_ep_length": 39.0
+  },
+  "ippo_random": {
+    "train_seconds": 1496.420177936554,
+    "success_rate": 0.1225,
+    "violation_rate": 0.0,
+    "avg_team_return": 220.72100000000006,
+    "avg_ep_length": 45.95918367346939
+  },
+  "mappo_fixed": {
+    "train_seconds": 1758.6862149238586,
+    "success_rate": 0.0,
+    "violation_rate": 1.0,
+    "avg_team_return": 152.83499999999995,
+    "avg_ep_length": null
+  },
+  "mappo_random": {
+    "train_seconds": 2106.9541869163513,
+    "success_rate": 0.0,
+    "violation_rate": 1.0,
+    "avg_team_return": 83.24499999999989,
+    "avg_ep_length": null
+  }
+}
